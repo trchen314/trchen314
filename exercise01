@@ -1,0 +1,12 @@
+create table Addressbook(
+    regist_no INT NOT NULL,
+    name varchar(128) not NULL,
+    address varchar(256) NOT NULL,
+    tel_no char(10),
+    mail_address char(20),
+    primary key(regist_no)
+);
+describe table Addressbook;
+select * from addressbook;
+alter table Addressbook add postal_code varchar(8) not null;
+drop table Addressbook;
